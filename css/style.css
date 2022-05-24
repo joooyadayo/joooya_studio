@@ -1,0 +1,211 @@
+/* ブラウザ余白を無効化 */
+* {
+  margin  : 0px;
+  padding : 0px;
+}
+
+
+/* 基本設定 */
+body {
+        font-family: 'Nanum Myeongjo','Noto Serif JP',serif;
+      }
+
+
+
+
+/* 共通タイトル */
+.title{
+  padding-top : 20% ;
+  padding-bottom : 5% ;
+  margin : 0 auto;
+  font-size: 2rem;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+
+
+
+
+/* header */
+.head {
+      position : relative;
+    }
+
+.head_top {
+            width:100%;
+            margin-top: 10%;
+          }
+
+.head_logo{
+            position:absolute;
+            width : 20%;
+            top   : 50%;
+            left  : 50%;
+            transform:translate(-50% , -50%);
+            margin-top: 5%;
+          }
+
+
+
+
+/* Service */
+.service {
+          padding-bottom : 20%;
+        }
+
+
+.center_layer{
+              position : relative;
+            }
+
+.thumbnail{
+              width : 300px;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              padding-bottom:3%;
+        }
+
+.thumb_title  {
+              font-size : 100%;
+              letter-spacing: 1rem;
+              top: 40%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              position : absolute;
+              color : white;
+              }
+
+
+/* works */
+.works {
+          padding-bottom:20%;
+       }
+
+/* Slideshow */
+
+       .slider {
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+      .slider-item {
+        width: 300px;
+        float: left;
+      }
+      img{
+        width:100%;
+      }
+      .slider-inner {
+        width: 400%;
+        animation: slider 20s infinite ease;
+      }
+      
+      @keyframes slider {
+        0% {
+        transform: translateX(0);
+        }
+        25% {
+        transform: translateX(-300px);
+        }
+        50% {
+        transform: translateX(-600px);
+        }
+        75% {
+          transform: translateX(-900px);
+          }
+        100% {
+        transform: translateX(0);
+        }
+      }
+
+
+
+
+
+
+/*  profile  */
+.profile {
+          padding-bottom:20%;
+          }
+
+.profimg {
+              width : 300px;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              padding-bottom:3%;
+}
+
+.intro{
+  padding-top:10%;
+  font-size : 15px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+
+
+
+
+
+
+
+/* account */
+.account {
+  padding-bottom : 50%;
+}
+
+.social{
+  padding-top:20%;
+  font-size : 15px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+
+/* PC用のCSSはメディアクエリの外に記述する */
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+  .head_logo{
+    position:absolute;
+    width : 150px;
+    top   : 50%;
+    left  : 50%;
+    transform:translate(-50% , -50%);
+    margin-top: 5%;
+  }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+  .head_logo{
+    position:absolute;
+    width : 150px;
+    top   : 50%;
+    left  : 50%;
+    transform:translate(-50% , -50%);
+    margin-top: 5%;
+  }
+
+
+
+
+
+
+
+
+
+
+}
