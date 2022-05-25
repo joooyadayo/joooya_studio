@@ -25,24 +25,21 @@ body {
 
 
 
-
-
 /* header */
 .head {
-      position : relative;
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      background: url("../img/head_top.jpeg")
+      center / cover;
     }
-
-.head_top {
-            width:100%;
-            margin-top: 10%;
-          }
-
+    
 .head_logo{
             position:absolute;
-            width : 20%;
+            width : 30%;
             top   : 50%;
             left  : 50%;
-            transform:translate(-50% , -50%);
+            transform:translate(-50% , -80%);
             margin-top: 5%;
           }
 
@@ -174,7 +171,7 @@ body {
 	/* 959px以下に適用されるCSS（タブレット用） */
   .head_logo{
     position:absolute;
-    width : 150px;
+    width : 350px;
     top   : 50%;
     left  : 50%;
     transform:translate(-50% , -50%);
@@ -190,12 +187,18 @@ body {
 
 @media screen and (max-width: 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
+
+  .head {
+    position : relative;
+    min-height : 100vh;
+  }
+  
   .head_logo{
     position:absolute;
-    width : 150px;
+    width : 250px;
     top   : 50%;
     left  : 50%;
-    transform:translate(-50% , -50%);
+    transform:translate(-50% , -80%);
     margin-top: 5%;
   }
 
