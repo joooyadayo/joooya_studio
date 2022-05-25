@@ -202,8 +202,23 @@ body {
     margin-top: 5%;
   }
 
-
-
+	
+/* 新規追加 */
+.service {
+	      min-height: 100vh;
+	}
+	
+.works {
+	      min-height: 100vh;
+	}
+	
+.profile{
+	      min-height: 100vh;
+	}
+	
+.account {
+	      min-height: 100vh;
+	}
 
 
 
