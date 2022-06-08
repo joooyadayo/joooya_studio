@@ -1,82 +1,104 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <!--CSS読み込み-->
-  <link rel="stylesheet" href="css/style.css">
-  <!--JavaScript読み込み-->
+<meta charset="UTF-8">
 
-  <!--画面拡大不可-->
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-  
-  <!--Google Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
-  <title>joooya studio</title>
+<!--Reset CSS-->
+<link rel="stylesheet" href="css/reset.css">
+
+<!--Using CSS-->
+<link rel="stylesheet" href="css/style.css">
+
+<!--Using JavaScript-->
+
+<!--画面拡大不可-->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+<!--Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+
+<!--WEBSITE TITLE-->
+<title>joooya studio</title>
+
 </head>
-  
 <body>
-  
-  <!--header-->
-  <header class = "head">
-    <img class = "head_logo" src = "img/head_logo.png">
-  </header>
 
-  <!--service-->
 
-  <section class = "service">
+<div class = "container">
 
-    <p class ="title" >service</p>
+    <!--TOP-->
+    <div class = "top">
+        <img class = "logo" src="img/logo.png">
+    </div>
+    <!--TOP-->
 
-    <div class ="center_layer">
-      <img class = "thumbnail" src = "img/thumb1.jpeg">
-      <p class = "thumb_title">apllication</p>
+    <!--SERVICE-->
+    <div class = "area">
+        <p class = "title">Service</p>
+
+        <!--Main Service-->
+        <div class="mask">
+        <div class="caption">
+        <p class = "subtitle">Website</p>
+        <div class = "description">
+            ランディングページの制作<br>
+            既存コードの改修
+        </div>
+
+        <p class = "subtitle">Application</p>
+        <div class = "description">
+            WindowsFormアプリケーションの開発<br>
+            Visual Basic 6.0で作製されたプログラムのNETへの移行
+        </div>
+
+        <!--Sub Service-->
+
+        <p class = "subtitle">Taking Snapshot</p>
+        <div class = "description">
+            宣材写真、素材画像の撮影及び提供
+        </div>
+
+        <p class = "subtitle">Design</p>
+        <div class = "description">
+            ウェブサイトのカンプ制作<br>
+            オブジェクト指向UIデザイン化案の提供<br>
+            アイコン画像、カリグラフィロゴ等の制作
+        </div>
+
+        <p class = "subtitle">Sound</p>
+        <div class = "description">
+            各種サウンドエフェクト、BGMの制作
+        </div>
+        </div>
+        </div>
+        <!--SERVICE-->
+
     </div>
 
-    <div class ="center_layer">
-      <img class = "thumbnail" src = "img/thumb2.jpeg">
-      <p class = "thumb_title">web page</p>
+    <!--WORKS-->
+    <div class = "area">
+        <p class = "title">Works</p>
+        <div class="mask">
+        <div class="caption">
+            <div class="slider">
+                <div class="slider-inner">
+                    <div class="slider-item"><img src="slide/sl1.jpeg"></div>
+                    <div class="slider-item"><img src="slide/sl2.jpeg"></div>
+                    <div class="slider-item"><img src="slide/sl3.jpeg"></div>
+                    <div class="slider-item"><img src="slide/sl4.jpeg"></div>
+                </div>
+              </div>
+        </div>
+        </div>
     </div>
 
-    <div class ="center_layer">
-      <img class = "thumbnail" src = "img/thumb3.jpeg">
-      <p class = "thumb_title">photograph</p>
-    </div>
-
-    <div class ="center_layer">
-      <img class = "thumbnail" src = "img/thumb4.jpeg">
-      <p class = "thumb_title">illustration</p>
-    </div>
-
-    <div class ="center_layer">
-      <img class = "thumbnail" src = "img/thumb5.jpeg">
-      <p class = "thumb_title">music</p>
-    </div>
-
-  </section>
-
-  <!--works-->
-  <section class ="works">
-
-    <p class = "title">works</p>
-
-    <div class="slider">
-      <div class="slider-inner">
-          <div class="slider-item"><img src="slide/sl1.jpeg"></div>
-          <div class="slider-item"><img src="slide/sl2.jpeg"></div>
-          <div class="slider-item"><img src="slide/sl3.jpeg"></div>
-          <div class="slider-item"><img src="slide/sl4.jpeg"></div>
-      </div>
-    </div>
-
-  </section>
-
-  <!--profile-->
-  <section class = "profile">
-    <p class = "title">profile</p>
-    <div class ="center_layer">
-      <img class = "profimg" src = "img/profile.jpeg">
+    <div class = "area">
+    <p class = "title">Profile</p>
+    <div class="mask">
+    <div class="caption">
+    <img class = "profimg" src = "img/me.jpeg">
       <div class = "intro">
         joooya<br><br>
         1993 Born in Utsunomiya City<br>
@@ -86,22 +108,25 @@
         My creativity is thanks to confronting diversity<br>
         while my life with migration.
       </div>
-    </div>
-  </section>
-
-  <!--account-->
-  <section class = "account">
-    <p class = "title">other activities</p>
-
-    <div class ="social">
-      twitter : <a href="https://twitter.com/@joooyadayo">@joooyadayo</a>
-      <br><br><br>
-      blog : <a>Under Constructing...</a>
+      </div>
+      </div>
     </div>
 
-  </section>
+    <div class = "area">
+        <p class = "title">Other Activities</p>
+        <div class = "mask">
+            <div class = "caption">
+                <div class ="social">
+                    twitter : <a href="https://twitter.com/@joooyadayo">@joooyadayo</a>
+                    <br><br><br>
+                    blog : <a>Under Constructing...</a>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
 
 </body>
-
-
 </html>
