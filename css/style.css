@@ -114,8 +114,8 @@ p {
 	top:0;
 	left:0;
 	opacity:0;	/* マスクを表示しない */
-	-webkit-transition:	all 0.2s ease;
-	transition:	all 0.2s ease;
+	-webkit-transition:	all 0.5s ease;
+	transition:	all 0.5s ease;
 }
 
 .area:hover .mask {
@@ -123,24 +123,96 @@ p {
 }
 
 
+.caption_1 {
+    /* 背景色の設定*/
+    background: url("../img/bg_1.jpg") center / cover;
+    /* 親要素にする */
+    position: relative;
+    /* 画面高さの60%に固定する */
+    height: 100vh;
+    padding: 1rem;
+    /* スクロール位置を固定する（ピタッと止まる）*/
+    scroll-snap-align: start;
+
+    /* テキストを画面中央に表示 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.caption_2 {
+    /* 背景色の設定*/
+    background: url("../img/bg_2.jpg") center / cover;
+    color:white;
+    /* 親要素にする */
+    position: relative;
+    /* 画面高さの60%に固定する */
+    height: 100vh;
+    padding: 1rem;
+    /* スクロール位置を固定する（ピタッと止まる）*/
+    scroll-snap-align: start;
+
+    /* テキストを画面中央に表示 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.caption_3 {
+    /* 背景色の設定*/
+    background: url("../img/bg_3.jpg") center / cover;
+    color:white;
+    /* 親要素にする */
+    position: relative;
+    /* 画面高さの60%に固定する */
+    height: 100vh;
+    padding: 1rem;
+    /* スクロール位置を固定する（ピタッと止まる）*/
+    scroll-snap-align: start;
+
+    /* テキストを画面中央に表示 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.caption_4 {
+    /* 背景色の設定*/
+    background-color:black;
+    color:white;
+    /* 親要素にする */
+    position: relative;
+    /* 画面高さの60%に固定する */
+    height: 100vh;
+    padding: 1rem;
+    /* スクロール位置を固定する（ピタッと止まる）*/
+    scroll-snap-align: start;
+
+    /* テキストを画面中央に表示 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 
 /* Slideshow */
 
        .slider {
-        width: 300px;
+        width: 400px;
         height: 400px;
         overflow: hidden;
         margin: 0 auto;
       }
       .slider-item {
-        width: 300px;
+        width: 400px;
         float: left;
       }
       img{
         width:100%;
       }
       .slider-inner {
-        width: 600%;
+        width: 800%;
         animation: slider 20s infinite ease;
       }
 
@@ -149,13 +221,13 @@ p {
         transform: translateX(0);
         }
         25% {
-        transform: translateX(-300px);
+        transform: translateX(-400px);
         }
         50% {
-        transform: translateX(-600px);
+        transform: translateX(-800px);
         }
         75% {
-          transform: translateX(-900px);
+          transform: translateX(-1200px);
           }
         100% {
         transform: translateX(0);
@@ -190,7 +262,10 @@ line-height: 25px;
 
 
 
-
+.link{
+    text-decoration: none;
+    color:gold;
+}
 
 
 
