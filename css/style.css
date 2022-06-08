@@ -1,90 +1,134 @@
-/* ブラウザ余白を無効化 */
-* {
-  margin  : 0px;
-  padding : 0px;
-}
+@charset "utf-8";
 
+
+
+
+
+/*************************/
+/* 標準画面 PC設定 ここから*/
+/*************************/
 
 /* 基本設定 */
 body {
-        font-family: 'Nanum Myeongjo','Noto Serif JP',serif;
-      }
+    font-family: 'Nanum Myeongjo','Noto Serif JP',serif;
+    text-align: center;
+}
 
+p {
+    line-height: 1.7;
+}
 
+.title {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
 
+/* top */
 
-/* 共通タイトル */
-.title{
-  padding-top : 20% ;
-  padding-bottom : 5% ;
-  margin : 0 auto;
-  font-size: 2rem;
-  letter-spacing: 10px;
-  text-align: center;
+.top {
+    /* 親要素にする */
+    position: relative;
+    /* 画面高さの60%に固定する */
+    height: 100vh;
+    /* 背景画像を設定 */
+    background: url("../img/bg.jpeg") center / cover;
+    /* スクロール開始位置を固定する（ピタッと止まる）*/
+    scroll-snap-align: start;
+    /* 背景画像を固定する*/
+    background-attachment: fixed;
+}
+
+.logo {
+    /* 子要素にする */
+    position:absolute;
+    /* 画面幅の20％ */
+    width : 20vw;
+    /* 上下左右の中央揃え */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.container {
+    /* スクロールスナップの設定 */
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
 }
 
 
+/* SERVICE */
 
-/* header */
-.head {
-      position: relative;
-      width: 100%;
-      min-height: 100vh;
-      background: url("../img/head_top.jpeg")
-      center / cover;
-    }
-    
-.head_logo{
-            position:absolute;
-            width : 30%;
-            top   : 50%;
-            left  : 50%;
-            transform:translate(-50% , -80%);
-            margin-top: 5%;
-          }
+.area {
+    /* 背景色の設定*/
+    background-color:white;
+    /* 親要素にする */
+    position: relative;
+    /* 画面高さの60%に固定する */
+    height: 100vh;
+
+    padding: 1rem;
+    /* スクロール位置を固定する（ピタッと止まる）*/
+    scroll-snap-align: start;
+
+    /* テキストを画面中央に表示 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* サブタイトル*/
+.subtitle {
+    font-size: 2rem;
+}
+
+/* 説明文 */
+.description {
+    font-size: 1rem;
+}
+
+.caption {
+    /* 背景色の設定*/
+    background-color:white;
+    /* 親要素にする */
+    position: relative;
+    /* 画面高さの60%に固定する */
+    height: 100vh;
+    padding: 1rem;
+    /* スクロール位置を固定する（ピタッと止まる）*/
+    scroll-snap-align: start;
+
+    /* テキストを画面中央に表示 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mask {
+	width:100%;
+	height:100%;
+	position:absolute;	/* 絶対位置指定 */
+	top:0;
+	left:0;
+	opacity:0;	/* マスクを表示しない */
+	-webkit-transition:	all 0.2s ease;
+	transition:	all 0.2s ease;
+}
+
+.area:hover .mask {
+	opacity:		1;	/* マスクを表示する */
+}
 
 
-
-
-/* Service */
-.service {
-          padding-bottom : 20%;
-        }
-
-
-.center_layer{
-              position : relative;
-            }
-
-.thumbnail{
-              width : 300px;
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              padding-bottom:3%;
-        }
-
-.thumb_title  {
-              font-size : 100%;
-              letter-spacing: 1rem;
-              top: 40%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              position : absolute;
-              color : white;
-              }
-
-
-/* works */
-.works {
-          padding-bottom:20%;
-       }
 
 /* Slideshow */
 
        .slider {
         width: 300px;
-        height: 200px;
+        height: 400px;
         overflow: hidden;
         margin: 0 auto;
       }
@@ -96,10 +140,10 @@ body {
         width:100%;
       }
       .slider-inner {
-        width: 400%;
+        width: 600%;
         animation: slider 20s infinite ease;
       }
-      
+
       @keyframes slider {
         0% {
         transform: translateX(0);
@@ -125,23 +169,23 @@ body {
 
 /*  profile  */
 .profile {
-          padding-bottom:20%;
-          }
+    padding-bottom:20%;
+    }
 
 .profimg {
-              width : 300px;
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              padding-bottom:3%;
+        width : 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom:0;
 }
 
 .intro{
-  padding-top:10%;
-  font-size : 15px;
-  text-align: center;
-  letter-spacing: 1px;
-  line-height: 25px;
+padding-top:10%;
+font-size : 15px;
+text-align: center;
+letter-spacing: 1px;
+line-height: 25px;
 }
 
 
@@ -150,26 +194,45 @@ body {
 
 
 
+/**************************/
+/* 標準画面 PC設定 ここまで */
+/**************************/
 
-/* account */
-.account {
-  padding-bottom : 50%;
-}
 
-.social{
-  padding-top:20%;
-  font-size : 15px;
-  text-align: center;
-  letter-spacing: 1px;
-  line-height: 25px;
-}
 
 
 /* PC用のCSSはメディアクエリの外に記述する */
 
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
-  .head_logo{
+
+    .title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* サブタイトル*/
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    /* 説明文 */
+    .description {
+        font-size: 0.5rem;
+    }
+
+    
+.intro{
+    padding-top:10%;
+    font-size : 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 25px;
+    }
+    
+    
+
+  .logo{
     position:absolute;
     width : 350px;
     top   : 50%;
@@ -188,12 +251,30 @@ body {
 @media screen and (max-width: 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
 
-  .head {
-    position : relative;
-    min-height : 100vh;
-  }
+    .title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+        /* サブタイトル*/
+        .subtitle {
+            font-size: 1.5rem;
+        }
+    
+        /* 説明文 */
+        .description {
+            font-size: 0.6rem;
+        }
   
-  .head_logo{
+        
+.intro{
+    font-size : 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 25px;
+    }
+    
+  .logo{
     position:absolute;
     width : 250px;
     top   : 50%;
@@ -202,27 +283,8 @@ body {
     margin-top: 5%;
   }
 
-	
-/* 新規追加 */
-.service {
-	      min-height: 100vh;
-	}
-	
-.works {
-	      min-height: 100vh;
-	}
-	
-.profile{
-	      min-height: 100vh;
-	}
-	
-.account {
-	      	min-height: 100vh;
-		padding-bottom: 0;
-	}
-
-
-
 
 
 }
+
+
