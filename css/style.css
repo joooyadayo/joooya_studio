@@ -142,7 +142,7 @@ p {
 
 .caption_2 {
     /* 背景色の設定*/
-    background: url("../img/bg_2.jpg") center / cover;
+    background: url("../img/bg_2.JPG") center / cover;
     color:white;
     /* 親要素にする */
     position: relative;
@@ -160,7 +160,7 @@ p {
 
 .caption_3 {
     /* 背景色の設定*/
-    background: url("../img/bg_3.jpg") center / cover;
+    background: url("../img/bg_3.JPG") center / cover;
     color:white;
     /* 親要素にする */
     position: relative;
