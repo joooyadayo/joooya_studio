@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-
-
-
-
 /*************************/
 /* 標準画面 PC設定 ここから*/
 /*************************/
@@ -16,11 +12,6 @@ body {
 
 p {
     line-height: 1.7;
-}
-
-.title {
-    font-size: 5rem;
-    margin-bottom: 2rem;
 }
 
 /* top */
@@ -59,6 +50,18 @@ p {
 }
 
 
+.titleimg{
+    position:absolute;
+    /* 画面幅の20％ */
+    width : 40vw;
+    /* 上下左右の中央揃え */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
 /* SERVICE */
 
 .area {
@@ -68,16 +71,13 @@ p {
     position: relative;
     /* 画面高さの60%に固定する */
     height: 100vh;
-
     padding: 1rem;
     /* スクロール位置を固定する（ピタッと止まる）*/
     scroll-snap-align: start;
-
     /* テキストを画面中央に表示 */
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 /* サブタイトル*/
@@ -110,16 +110,19 @@ p {
 .mask {
 	width:100%;
 	height:100%;
-	position:absolute;/* 絶対位置指定 */
+    /* 絶対位置指定 */
+	position:absolute;
 	top:0;
 	left:0;
-	opacity:0;/* マスクを表示しない */
-	-webkit-transition:all 1s ease;
-	transition:all 1s ease;
+    /* マスクを表示しない */
+	opacity:0;
+	-webkit-transition:	all 0.5s ease;
+	transition:	all 0.5s ease;
 }
 
 .area:hover .mask {
-	opacity:1;/* マスクを表示する */
+    /* マスクを表示する */
+	opacity:1;
 }
 
 
@@ -142,7 +145,7 @@ p {
 
 .caption_2 {
     /* 背景色の設定*/
-    background: url("../img/bg_2.JPG") center / cover;
+    background: url("../img/bg_2.jpg") center / cover;
     color:white;
     /* 親要素にする */
     position: relative;
@@ -160,7 +163,7 @@ p {
 
 .caption_3 {
     /* 背景色の設定*/
-    background: url("../img/bg_3.JPG") center / cover;
+    background: url("../img/bg_3.jpg") center / cover;
     color:white;
     /* 親要素にする */
     position: relative;
@@ -198,41 +201,41 @@ p {
 
 /* Slideshow */
 
-       .slider {
-        width: 400px;
-        height: 400px;
-        overflow: hidden;
-        margin: 0 auto;
-      }
-      .slider-item {
-        width: 400px;
-        float: left;
-      }
-      img{
-        width:100%;
-      }
-      .slider-inner {
-        width: 800%;
-        animation: slider 20s infinite ease;
-      }
+.slider {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slider-item {
+    width: 400px;
+    float: left;
+}
+img{
+    width:100%;
+}
+.slider-inner {
+    width: 800%;
+    animation: slider 20s infinite ease;
+}
 
-      @keyframes slider {
-        0% {
+@keyframes slider {
+    0% {
         transform: translateX(0);
-        }
-        25% {
+    }
+    25% {
         transform: translateX(-400px);
-        }
-        50% {
+    }
+    50% {
         transform: translateX(-800px);
-        }
-        75% {
-          transform: translateX(-1200px);
-          }
-        100% {
+    }
+    75% {
+        transform: translateX(-1200px);
+    }
+    100% {
         transform: translateX(0);
-        }
-      }
+    }
+}
 
 
 
@@ -242,8 +245,7 @@ p {
 /*  profile  */
 .profile {
     padding-bottom:20%;
-    }
-
+}
 .profimg {
         width : 300px;
         display: block;
@@ -251,17 +253,13 @@ p {
         margin-right: auto;
         padding-bottom:0;
 }
-
 .intro{
-padding-top:10%;
-font-size : 15px;
-text-align: center;
-letter-spacing: 1px;
-line-height: 25px;
+        padding-top:10%;
+        font-size : 15px;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 25px;
 }
-
-
-
 .link{
     text-decoration: none;
     color:gold;
@@ -282,30 +280,27 @@ line-height: 25px;
 	/* 959px以下に適用されるCSS（タブレット用） */
 
     .title {
-        font-size: 2rem;
-        margin-bottom: 2rem;
+        font-size: 3rem;
+        margin-bottom: 3rem;
     }
 
     /* サブタイトル*/
     .subtitle {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     /* 説明文 */
     .description {
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
 
-    
-.intro{
-    padding-top:10%;
-    font-size : 10px;
-    text-align: center;
-    letter-spacing: 1px;
-    line-height: 25px;
+    .intro{
+        padding-top:10%;
+        font-size : 20px;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 25px;
     }
-    
-    
 
   .logo{
     position:absolute;
@@ -330,33 +325,73 @@ line-height: 25px;
         font-size: 2rem;
         margin-bottom: 2rem;
     }
-    
-        /* サブタイトル*/
-        .subtitle {
-            font-size: 1.5rem;
-        }
-    
-        /* 説明文 */
-        .description {
-            font-size: 0.6rem;
-        }
-  
-        
-.intro{
-    font-size : 10px;
-    text-align: center;
-    letter-spacing: 1px;
-    line-height: 25px;
+    /* サブタイトル*/
+    .subtitle {
+        font-size: 1.5rem;
+    }
+    /* 説明文 */
+    .description {
+        font-size: 0.6rem;
+    }
+    .intro{
+        font-size : 10px;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 25px;
     }
     
-  .logo{
-    position:absolute;
-    width : 250px;
-    top   : 50%;
-    left  : 50%;
-    transform:translate(-50% , -80%);
-    margin-top: 5%;
+    .logo{
+        position:absolute;
+        width : 250px;
+        top   : 50%;
+        left  : 50%;
+        transform:translate(-50% , -80%);
+        margin-top: 5%;
+    }
+
+
+
+/* Slideshow */
+
+    .slider {
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .slider-item {
+        width: 300px;
+        float: left;
+    }
+    img{
+        width:100%;
+    }
+    .slider-inner {
+        width: 600%;
+        animation: slider 20s infinite ease;
+    }
+
+    @keyframes slider {
+        0% {
+        transform: translateX(0);
+        }
+        25% {
+        transform: translateX(-300px);
+        }
+        50% {
+        transform: translateX(-600px);
+        }
+        75% {
+        transform: translateX(-900px);
+        }
+        100% {
+        transform: translateX(0);
+        }
   }
+
+
+
+
 
 
 
