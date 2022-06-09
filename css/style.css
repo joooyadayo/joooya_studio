@@ -356,7 +356,7 @@ img{
     /* 画面高さの60%に固定する */
     height: 100vh;
     /* 背景画像を設定 */
-    background: url("../img/bg_.jpeg") center / cover;
+    background: url("../img/bg_.jpg") center / cover;
     /* スクロール開始位置を固定する（ピタッと止まる）*/
     scroll-snap-align: start;
     /* 背景画像を固定する*/
