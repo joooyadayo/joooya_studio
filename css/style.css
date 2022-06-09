@@ -117,8 +117,8 @@ p {
     /* マスクを表示しない */
 	opacity:0;
 	-webkit-transition:all 1.5s ease;
-	transition:all 3s ease;
-	transition-duration: 3s;
+	transition:all 2s ease;
+	transition-duration: 2s;
 }
 
 .area:hover .mask {
