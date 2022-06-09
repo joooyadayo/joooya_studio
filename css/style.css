@@ -350,9 +350,18 @@ img{
         margin-top: 5%;
     }
 
-	.top {
-       background: url("../img/bg_.jpg") center / cover;
-    }
+.top {
+    /* 親要素にする */
+    position: relative;
+    /* 画面高さの60%に固定する */
+    height: 100vh;
+    /* 背景画像を設定 */
+    background: url("../img/bg_.jpeg") center / cover;
+    /* スクロール開始位置を固定する（ピタッと止まる）*/
+    scroll-snap-align: start;
+    /* 背景画像を固定する*/
+    background-attachment: fixed;
+}
 
 
 
