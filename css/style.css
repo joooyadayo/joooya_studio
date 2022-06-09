@@ -350,6 +350,10 @@ img{
         margin-top: 5%;
     }
 
+	.top {
+       background: url("../img/bg_.jpg") center / cover;
+    }
+
 
 
 /* Slideshow */
