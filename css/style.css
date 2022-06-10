@@ -208,7 +208,7 @@ body{
     height:400px;
     /*画像がはみ出ている場合は中央でトリミング*/
     object-fit: cover
-} 
+}
 /*X軸の移動*/
 @keyframes slider {
     0% {
@@ -234,8 +234,12 @@ body{
     text-decoration: none;
     color:gold;
 }
-
-
+.rights{
+    position:absolute;
+    right:1%;
+    bottom:1%;
+    color:white;
+}
 
 /*Tablet View*/
 @media screen and (max-width: 959px) {
@@ -442,7 +446,7 @@ body{
         height:400px;
         /*画像がはみ出ている場合は中央でトリミング*/
         object-fit: cover
-    } 
+    }
     /*X軸の移動*/
     @keyframes slider {
         0% {
@@ -468,9 +472,13 @@ body{
         text-decoration: none;
         color:gold;
     }
-    
+    .rights{
+        position:absolute;
+        right:1%;
+        bottom:1%;
+        color:white;
+    }
 }
-
 
 
 /*Mobile View*/
@@ -704,5 +712,10 @@ body{
         text-decoration: none;
         color:gold;
     }
-    
+    .rights{
+        position:absolute;
+        right:1%;
+        bottom:1%;
+        color:white;
+    }
 }
