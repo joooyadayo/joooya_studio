@@ -1,265 +1,234 @@
 @charset "utf-8";
+/*Google Font*/
+/*Garamond + Shippori MIncho*/
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Shippori+Mincho&display=swap');
 
-/*************************/
-/* 標準画面 PC設定 ここから*/
-/*************************/
 
-/* 基本設定 */
-body {
-    font-family: 'Nanum Myeongjo','Noto Serif JP',serif;
+/*Computer View*/
+body{
+    /*フォントの指定*/
+    font-family: 'EB Garamond','Shippori Mincho', serif;
+    /*中央揃え*/
     text-align: center;
 }
-
-p {
-    line-height: 1.7;
-}
-
-/* top */
-
-.top {
-    /* 親要素にする */
-    position: relative;
-    /* 画面高さの60%に固定する */
-    height: 100vh;
-    /* 背景画像を設定 */
-    background: url("../img/bg.jpeg") center / cover;
+.top{
+    /*親要素にする*/
+    position:relative;
+    /*背景画像を指定する*/
+    background:url(../img/bg_top.jpg) center / cover;
+    /*画面高さの100%を占有して表示*/
+    height:100vh;
+    /*背景画像を固定する*/
+    background-attachment: fixed;
     /* スクロール開始位置を固定する（ピタッと止まる）*/
     scroll-snap-align: start;
-    /* 背景画像を固定する*/
-    background-attachment: fixed;
 }
-
-.logo {
-    /* 子要素にする */
+.img_logo{
+    /*子要素にする*/
     position:absolute;
-    /* 画面幅の20％ */
+    /*画面幅の20％を占有して表示*/
     width : 20vw;
-    /* 上下左右の中央揃え */
+    /*上下左右の中央揃え*/
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
 }
-
-.container {
-    /* スクロールスナップの設定 */
-    overflow: auto;
+.scroll-snapper{
+    /*スクロールスナップの設定*/
+    overflow:auto;
     scroll-snap-type: y mandatory;
     height: 100vh;
 }
-
-
-.titleimg{
+.service{
+    /*親要素にする*/
+    position:relative;
+    /*画面高さの100%を占有して表示*/
+    height:100vh;
+    /*背景色の設定*/
+    background-color:white;
+    /*スクロール開始位置を固定する（ピタッと止まる*/
+    scroll-snap-align: start;
+}
+.works{
+    /*親要素にする*/
+    position:relative;
+    /*画面高さの100%を占有して表示*/
+    height:100vh;
+    /*背景色の設定*/
+    background-color:white;
+    /*スクロール開始位置を固定する（ピタッと止まる*/
+    scroll-snap-align: start;
+}
+.profile{
+    /*親要素にする*/
+    position:relative;
+    /*画面高さの100%を占有して表示*/
+    height:100vh;
+    /*背景色の設定*/
+    background-color:white;
+    /*スクロール開始位置を固定する（ピタッと止まる*/
+    scroll-snap-align: start;
+}
+.other-activities{
+    /*親要素にする*/
+    position:relative;
+    /*画面高さの100%を占有して表示*/
+    height:100vh;
+    /*背景色の設定*/
+    background-color:white;
+    /*スクロール開始位置を固定する（ピタッと止まる*/
+    scroll-snap-align: start;
+}
+.img_title{
+    /*子要素にする*/
     position:absolute;
-    /* 画面幅の20％ */
-    width : 40vw;
-    /* 上下左右の中央揃え */
+    /*画面幅の50％を占有して表示*/
+    width : 50vw;
+    /*上下左右の中央揃え*/
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
 }
-
-/* SERVICE */
-
-.area {
-    /* 背景色の設定*/
+.index{
+    font-size:30px;
+    line-height: 2.5;
+}
+.description{
+    font-size:20px;
+    line-height: 1.5;
+}
+.hover-area {
+    /*背景色の設定*/
     background-color:white;
-    /* 親要素にする */
+    /*親要素にする*/
     position: relative;
-    /* 画面高さの60%に固定する */
+    /*画面高さの100%占有して表示*/
     height: 100vh;
-    padding: 1rem;
-    /* スクロール位置を固定する（ピタッと止まる）*/
-    scroll-snap-align: start;
-    /* テキストを画面中央に表示 */
+    /*テキストを画面中央に表示*/
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
-/* サブタイトル*/
-.subtitle {
-    font-size: 2rem;
-}
-
-/* 説明文 */
-.description {
-    font-size: 1rem;
-}
-
-.caption {
-    /* 背景色の設定*/
-    background-color:white;
-    /* 親要素にする */
-    position: relative;
-    /* 画面高さの60%に固定する */
-    height: 100vh;
-    padding: 1rem;
-    /* スクロール位置を固定する（ピタッと止まる）*/
-    scroll-snap-align: start;
-
-    /* テキストを画面中央に表示 */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.mask {
-	width:100%;
-	height:100%;
-    /* 絶対位置指定 */
-	position:absolute;
-	top:0;
-	left:0;
+.mask{
+    width:100%;
+    height:100%;
+    /*絶対位置指定*/
+    position:absolute;
+    top:0;
+    left:0;
     /* マスクを表示しない */
-	opacity:0;
-	-webkit-transition:all 1.5s ease;
-	transition:all 2s ease;
-	transition-duration: 2s;
+    opacity:0;
+    -webkit-transition:all 1.7s ease;
+    transition:all 1.7s ease;
+    transition-duration: 1.7s;
 }
-
-.area:hover .mask {
+.hover-area:hover .mask {
     /* マスクを表示する */
 	opacity:1;
 }
-
-
-.caption_1 {
-    /* 背景色の設定*/
-    background: url("../img/bg_1.jpg") center / cover;
+.hovered_1{
+    /* 背景画像の設定*/
+    background: url("../img/bg_service.jpg") center / cover;
+    /*文字色を指定する*/
+    color:black;
     /* 親要素にする */
     position: relative;
-    /* 画面高さの60%に固定する */
+    /* 画面高さの100%に固定する */
     height: 100vh;
-    padding: 1rem;
-    /* スクロール位置を固定する（ピタッと止まる）*/
-    scroll-snap-align: start;
-
     /* テキストを画面中央に表示 */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
-.caption_2 {
-    /* 背景色の設定*/
-    background: url("../img/bg_2.JPG") center / cover;
+.hovered_2{
+    /* 背景画像の設定*/
+    /*background: url("../img/bg_works.jpg") center / cover;
+    /*文字色を指定する*/
+    color:black;
+    /* 親要素にする */
+    position: relative;
+    /* 画面高さの100%に固定する */
+    height: 100vh;
+    /* テキストを画面中央に表示 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hovered_3{
+    /* 背景画像の設定*/
+    background: url("../img/bg_prof.gif") center / cover;
+    /*文字色を指定する*/
+    color:#b60000;
+    /* 親要素にする */
+    position: relative;
+    /* 画面高さの100%に固定する */
+    height: 100vh;
+    /* テキストを画面中央に表示 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hovered_4{
+    /* 背景画像の設定*/
+    /*background: url("../img/bg_others.jpg") center / cover;
+    /*背景色の設定*/
+    background-color: black;
+    /*文字色を指定する*/
     color:white;
     /* 親要素にする */
     position: relative;
-    /* 画面高さの60%に固定する */
+    /* 画面高さの100%に固定する */
     height: 100vh;
-    padding: 1rem;
-    /* スクロール位置を固定する（ピタッと止まる）*/
-    scroll-snap-align: start;
-
     /* テキストを画面中央に表示 */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
-.caption_3 {
-    /* 背景色の設定*/
-    background: url("../img/bg_3.JPG") center / cover;
-    color:white;
-    /* 親要素にする */
-    position: relative;
-    /* 画面高さの60%に固定する */
-    height: 100vh;
-    padding: 1rem;
-    /* スクロール位置を固定する（ピタッと止まる）*/
-    scroll-snap-align: start;
-
-    /* テキストを画面中央に表示 */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.caption_4 {
-    /* 背景色の設定*/
-    background-color:black;
-    color:white;
-    /* 親要素にする */
-    position: relative;
-    /* 画面高さの60%に固定する */
-    height: 100vh;
-    padding: 1rem;
-    /* スクロール位置を固定する（ピタッと止まる）*/
-    scroll-snap-align: start;
-
-    /* テキストを画面中央に表示 */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-
-/* Slideshow */
-
+/*スライドショー設定*/
 .slider {
-    width: 400px;
-    height: 400px;
+    width: 500px;
     overflow: hidden;
     margin: 0 auto;
 }
 .slider-item {
-    width: 400px;
+    width: 500px;
     float: left;
 }
-img{
-    width:100%;
-}
 .slider-inner {
-    width: 800%;
-    animation: slider 20s infinite ease;
+    width: 500%;
+    /*スライドを一周する秒数*/
+    animation: slider 15s infinite ease;
 }
-
+.slider-inner img{
+    width:100%;
+    height:400px;
+    /*画像がはみ出ている場合は中央でトリミング*/
+    object-fit: cover
+} 
+/*X軸の移動*/
 @keyframes slider {
     0% {
         transform: translateX(0);
     }
-    25% {
-        transform: translateX(-400px);
+    20% {
+        transform: translateX(-500px);
     }
-    50% {
-        transform: translateX(-800px);
+    40% {
+        transform: translateX(-1000px);
     }
-    75% {
-        transform: translateX(-1200px);
+    60% {
+        transform: translateX(-1500px);
+    }
+    80% {
+        transform: translateX(-2000px);
     }
     100% {
         transform: translateX(0);
     }
-}
-
-
-
-
-
-
-/*  profile  */
-.profile {
-    padding-bottom:20%;
-}
-.profimg {
-        width : 300px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom:0;
-}
-.intro{
-        padding-top:10%;
-        font-size : 15px;
-        text-align: center;
-        letter-spacing: 1px;
-        line-height: 25px;
 }
 .link{
     text-decoration: none;
@@ -268,108 +237,430 @@ img{
 
 
 
-/**************************/
-/* 標準画面 PC設定 ここまで */
-/**************************/
-
-
-
-
-/* PC用のCSSはメディアクエリの外に記述する */
-
+/*Tablet View*/
 @media screen and (max-width: 959px) {
-	/* 959px以下に適用されるCSS（タブレット用） */
-
-    .title {
-        font-size: 3rem;
-        margin-bottom: 3rem;
-    }
-
-    /* サブタイトル*/
-    .subtitle {
-        font-size: 2rem;
-    }
-
-    /* 説明文 */
-    .description {
-        font-size: 1rem;
-    }
-
-    .intro{
-        padding-top:10%;
-        font-size : 20px;
+    body{
+        /*フォントの指定*/
+        font-family: 'EB Garamond','Shippori Mincho', serif;
+        /*中央揃え*/
         text-align: center;
-        letter-spacing: 1px;
-        line-height: 25px;
     }
-
-  .logo{
-    position:absolute;
-    width : 350px;
-    top   : 50%;
-    left  : 50%;
-    transform:translate(-50% , -50%);
-    margin-top: 5%;
-  }
-
-
-}
-
-
-
-
-
-@media screen and (max-width: 480px) {
-	/* 480px以下に適用されるCSS（スマホ用） */
-
-    .title {
-        font-size: 2rem;
-        margin-bottom: 2rem;
+    .top{
+        /*親要素にする*/
+        position:relative;
+        /*背景画像を指定する*/
+        background:url(../img/bg_top.jpg) center / cover;
+        /*画面高さの100%を占有して表示*/
+        height:100vh;
+        /*背景画像を固定する*/
+        background-attachment: fixed;
+        /* スクロール開始位置を固定する（ピタッと止まる）*/
+        scroll-snap-align: start;
     }
-    /* サブタイトル*/
-    .subtitle {
-        font-size: 1.5rem;
+    .img_logo{
+        /*子要素にする*/
+        position:absolute;
+        /*画面幅の50％を占有して表示*/
+        width : 50vw;
+        /*上下左右の中央揃え*/
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
     }
-    /* 説明文 */
-    .description {
-        font-size: 0.6rem;
+    .scroll-snapper{
+        /*スクロールスナップの設定*/
+        overflow:auto;
+        scroll-snap-type: y mandatory;
+        height: 100vh;
     }
-    .intro{
-        font-size : 10px;
-        text-align: center;
-        letter-spacing: 1px;
-        line-height: 25px;
+    .service{
+        /*親要素にする*/
+        position:relative;
+        /*画面高さの100%を占有して表示*/
+        height:100vh;
+        /*背景色の設定*/
+        background-color:white;
+        /*スクロール開始位置を固定する（ピタッと止まる*/
+        scroll-snap-align: start;
+    }
+    .works{
+        /*親要素にする*/
+        position:relative;
+        /*画面高さの100%を占有して表示*/
+        height:100vh;
+        /*背景色の設定*/
+        background-color:white;
+        /*スクロール開始位置を固定する（ピタッと止まる*/
+        scroll-snap-align: start;
+    }
+    .profile{
+        /*親要素にする*/
+        position:relative;
+        /*画面高さの100%を占有して表示*/
+        height:100vh;
+        /*背景色の設定*/
+        background-color:white;
+        /*スクロール開始位置を固定する（ピタッと止まる*/
+        scroll-snap-align: start;
+    }
+    .other-activities{
+        /*親要素にする*/
+        position:relative;
+        /*画面高さの100%を占有して表示*/
+        height:100vh;
+        /*背景色の設定*/
+        background-color:white;
+        /*スクロール開始位置を固定する（ピタッと止まる*/
+        scroll-snap-align: start;
+    }
+    .img_title{
+        /*子要素にする*/
+        position:absolute;
+        /*画面幅の50％を占有して表示*/
+        width : 50vw;
+        /*上下左右の中央揃え*/
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .index{
+        font-size:30px;
+        line-height: 2.5;
+    }
+    .description{
+        font-size:20px;
+        line-height: 1.5;
+    }
+    .hover-area {
+        /*背景色の設定*/
+        background-color:white;
+        /*親要素にする*/
+        position: relative;
+        /*画面高さの100%占有して表示*/
+        height: 100vh;
+        /*テキストを画面中央に表示*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mask{
+        width:100%;
+        height:100%;
+        /*絶対位置指定*/
+        position:absolute;
+        top:0;
+        left:0;
+        /* マスクを表示しない */
+        opacity:0;
+        -webkit-transition:all 1.7s ease;
+        transition:all 1.7s ease;
+        transition-duration: 1.7s;
+    }
+    .hover-area:hover .mask {
+        /* マスクを表示する */
+        opacity:1;
+    }
+    .hovered_1{
+        /* 背景画像の設定*/
+        background: url("../img/bg_service.jpg") center / cover;
+        /*文字色を指定する*/
+        color:black;
+        /* 親要素にする */
+        position: relative;
+        /* 画面高さの100%に固定する */
+        height: 100vh;
+        /* テキストを画面中央に表示 */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hovered_2{
+        /* 背景画像の設定*/
+        /*background: url("../img/bg_works.jpg") center / cover;
+        /*文字色を指定する*/
+        color:black;
+        /* 親要素にする */
+        position: relative;
+        /* 画面高さの100%に固定する */
+        height: 100vh;
+        /* テキストを画面中央に表示 */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hovered_3{
+        /* 背景画像の設定*/
+        background: url("../img/bg_prof.gif") center / cover;
+        /*文字色を指定する*/
+        color:#b60000;
+        /* 親要素にする */
+        position: relative;
+        /* 画面高さの100%に固定する */
+        height: 100vh;
+        /* テキストを画面中央に表示 */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hovered_4{
+        /* 背景画像の設定*/
+        background: url("../img/bg_others.jpg") center / cover;
+        /*背景色の設定*/
+        background-color: white;
+        /*文字色を指定する*/
+        color:white;
+        /* 親要素にする */
+        position: relative;
+        /* 画面高さの100%に固定する */
+        height: 100vh;
+        /* テキストを画面中央に表示 */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /*スライドショー設定*/
+    .slider {
+        width: 500px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .slider-item {
+        width: 500px;
+        float: left;
+    }
+    .slider-inner {
+        width: 500%;
+        /*スライドを一周する秒数*/
+        animation: slider 15s infinite ease;
+    }
+    .slider-inner img{
+        width:100%;
+        height:400px;
+        /*画像がはみ出ている場合は中央でトリミング*/
+        object-fit: cover
+    } 
+    /*X軸の移動*/
+    @keyframes slider {
+        0% {
+            transform: translateX(0);
+        }
+        20% {
+            transform: translateX(-500px);
+        }
+        40% {
+            transform: translateX(-1000px);
+        }
+        60% {
+            transform: translateX(-1500px);
+        }
+        80% {
+            transform: translateX(-2000px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    .link{
+        text-decoration: none;
+        color:gold;
     }
     
-    .logo{
-        position:absolute;
-        width : 250px;
-        top   : 50%;
-        left  : 50%;
-        transform:translate(-50% , -80%);
-        margin-top: 5%;
-    }
-
-.top {
-    /* 親要素にする */
-    position: relative;
-    /* 画面高さの60%に固定する */
-    height: 100vh;
-    /* 背景画像を設定 */
-    background: url("../img/bg_.jpg") center / cover;
-    /* スクロール開始位置を固定する（ピタッと止まる）*/
-    scroll-snap-align: start;
-    /* 背景画像を固定する*/
-    background-attachment: fixed;
 }
 
 
 
-/* Slideshow */
-
+/*Mobile View*/
+@media screen and (max-width: 480px) {
+    body{
+        /*フォントの指定*/
+        font-family: 'EB Garamond','Shippori Mincho', serif;
+        /*中央揃え*/
+        text-align: center;
+    }
+    .top{
+        /*親要素にする*/
+        position:relative;
+        /*背景画像を指定する*/
+        background:url(../img/bg_top_mobile.jpg) center / cover;
+        /*画面高さの100%を占有して表示*/
+        height:100vh;
+        /*背景画像を固定する*/
+        background-attachment: fixed;
+        /* スクロール開始位置を固定する（ピタッと止まる）*/
+        scroll-snap-align: start;
+    }
+    .img_logo{
+        /*子要素にする*/
+        position:absolute;
+        /*画面幅の80％を占有して表示*/
+        width : 80vw;
+        /*上下左右の中央揃え*/
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .scroll-snapper{
+        /*スクロールスナップの設定*/
+        overflow:auto;
+        scroll-snap-type: y mandatory;
+        height: 100vh;
+    }
+    .service{
+        /*親要素にする*/
+        position:relative;
+        /*画面高さの100%を占有して表示*/
+        height:100vh;
+        /*背景色の設定*/
+        background-color:white;
+        /*スクロール開始位置を固定する（ピタッと止まる*/
+        scroll-snap-align: start;
+    }
+    .works{
+        /*親要素にする*/
+        position:relative;
+        /*画面高さの100%を占有して表示*/
+        height:100vh;
+        /*背景色の設定*/
+        background-color:white;
+        /*スクロール開始位置を固定する（ピタッと止まる*/
+        scroll-snap-align: start;
+    }
+    .profile{
+        /*親要素にする*/
+        position:relative;
+        /*画面高さの100%を占有して表示*/
+        height:100vh;
+        /*背景色の設定*/
+        background-color:white;
+        /*スクロール開始位置を固定する（ピタッと止まる*/
+        scroll-snap-align: start;
+    }
+    .other-activities{
+        /*親要素にする*/
+        position:relative;
+        /*画面高さの100%を占有して表示*/
+        height:100vh;
+        /*背景色の設定*/
+        background-color:white;
+        /*スクロール開始位置を固定する（ピタッと止まる*/
+        scroll-snap-align: start;
+    }
+    .img_title{
+        /*子要素にする*/
+        position:absolute;
+        /*画面幅の50％を占有して表示*/
+        width : 50vw;
+        /*上下左右の中央揃え*/
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .index{
+        font-size:25px;
+        line-height: 2.5;
+    }
+    .description{
+        font-size:15px;
+        line-height: 1.5;
+    }
+    .hover-area {
+        /*背景色の設定*/
+        background-color:white;
+        /*親要素にする*/
+        position: relative;
+        /*画面高さの100%占有して表示*/
+        height: 100vh;
+        /*テキストを画面中央に表示*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mask{
+        width:100%;
+        height:100%;
+        /*絶対位置指定*/
+        position:absolute;
+        top:0;
+        left:0;
+        /* マスクを表示しない */
+        opacity:0;
+        -webkit-transition:all 1.7s ease;
+        transition:all 1.7s ease;
+        transition-duration: 1.7s;
+    }
+    .hover-area:hover .mask {
+        /* マスクを表示する */
+        opacity:1;
+    }
+    .hovered_1{
+        /* 背景画像の設定*/
+        background: url("../img/bg_service.jpg") center / cover;
+        /*文字色を指定する*/
+        color:black;
+        /* 親要素にする */
+        position: relative;
+        /* 画面高さの100%に固定する */
+        height: 100vh;
+        /* テキストを画面中央に表示 */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hovered_2{
+        /* 背景画像の設定*/
+        /*background: url("../img/bg_works.jpg") center / cover;
+        /*文字色を指定する*/
+        color:black;
+        /* 親要素にする */
+        position: relative;
+        /* 画面高さの100%に固定する */
+        height: 100vh;
+        /* テキストを画面中央に表示 */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hovered_3{
+        /* 背景画像の設定*/
+        background: url("../img/bg_prof.gif") center / cover;
+        /*文字色を指定する*/
+        color:#b60000;
+        /* 親要素にする */
+        position: relative;
+        /* 画面高さの100%に固定する */
+        height: 100vh;
+        /* テキストを画面中央に表示 */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hovered_4{
+        /* 背景画像の設定*/
+        /*background: url("../img/bg_others.jpg") center / cover;
+        /*背景色の設定*/
+        background-color: black;
+        /*文字色を指定する*/
+        color:white;
+        /* 親要素にする */
+        position: relative;
+        /* 画面高さの100%に固定する */
+        height: 100vh;
+        /* テキストを画面中央に表示 */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /*スライドショー設定*/
     .slider {
         width: 300px;
-        height: 200px;
         overflow: hidden;
         margin: 0 auto;
     }
@@ -377,31 +668,41 @@ img{
         width: 300px;
         float: left;
     }
-    img{
-        width:100%;
-    }
     .slider-inner {
-        width: 600%;
-        animation: slider 20s infinite ease;
+        width: 500%;
+        /*スライドを一周する秒数*/
+        animation: slider 15s infinite ease;
     }
-
+    .slider-inner img{
+        width:100%;
+        height:200px;
+        /*画像がはみ出ている場合は中央でトリミング*/
+        object-fit: cover
+    } 
+    /*X軸の移動*/
     @keyframes slider {
         0% {
-        transform: translateX(0);
+            transform: translateX(0);
         }
-        25% {
-        transform: translateX(-300px);
+        20% {
+            transform: translateX(-300px);
         }
-        50% {
-        transform: translateX(-600px);
+        40% {
+            transform: translateX(-600px);
         }
-        75% {
-        transform: translateX(-900px);
+        60% {
+            transform: translateX(-900px);
+        }
+        80% {
+            transform: translateX(-1200px);
         }
         100% {
-        transform: translateX(0);
+            transform: translateX(0);
         }
-  }
+    }
+    .link{
+        text-decoration: none;
+        color:gold;
+    }
+    
 }
-
-
