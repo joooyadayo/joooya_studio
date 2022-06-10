@@ -2,138 +2,114 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-
 <!--Reset CSS-->
 <link rel="stylesheet" href="css/reset.css">
-
 <!--Using CSS-->
 <link rel="stylesheet" href="css/style.css">
-
-<!--Using JavaScript-->
-
 <!--画面拡大不可-->
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-
-<!--Google Fonts-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
-
-<!--WEBSITE TITLE-->
-<title>joooya studio</title>
-
+<!--Title-->
+<title>joooya studio.</title>
 </head>
 <body>
-
-
-<div class = "container">
-
-    <!--TOP-->
-    <div class = "top">
-        <img class = "logo" src="img/logo.png">
-    </div>
-    <!--TOP-->
-
-    <!--SERVICE-->
-    <div class = "area">
-        <img class = "titleimg" src="img/service.PNG">
-
-        <!--Main Service-->
-        <div class="mask">
-        <div class="caption_1">
-        <p class = "subtitle">Website</p>
-        <div class = "description">
-            ランディングページの制作<br>
-            既存コードの改修
-        </div>
-
-        <p class = "subtitle">Application</p>
-        <div class = "description">
-            WindowsFormアプリケーションの開発<br>
-            Visual Basic 6.0で作製されたプログラムのNETへの移行
-        </div>
-
-        <!--Sub Service-->
-
-        <p class = "subtitle">Taking Snapshot</p>
-        <div class = "description">
-            宣材写真、素材画像の撮影及び提供
-        </div>
-
-        <p class = "subtitle">Design</p>
-        <div class = "description">
-            ウェブサイトのカンプ制作<br>
-            オブジェクト指向UIデザイン化案の提供<br>
-            アイコン画像、カリグラフィロゴ等の制作
-        </div>
-
-        <p class = "subtitle">Sound</p>
-        <div class = "description">
-            各種サウンドエフェクト、BGMの制作
-        </div>
-        </div>
+    <div class = "scroll-snapper">
+        <!--TOP-->
+        <div class = "top">
+            <img class = "img_logo" src="img/top_logo.png">
         </div>
         <!--SERVICE-->
-
-    </div>
-
-    <!--WORKS-->
-    <div class = "area">
-        <img class = "titleimg" src="img/works.PNG">
-        <div class="mask">
-        <div class="caption_2">
-            <div class="slider">
-                <div class="slider-inner">
-                    <div class="slider-item"><img src="slide/sl1.jpeg"></div>
-                    <div class="slider-item"><img src="slide/sl2.jpeg"></div>
-                    <div class="slider-item"><img src="slide/sl3.jpeg"></div>
-                    <div class="slider-item"><img src="slide/sl4.jpeg"></div>
+        <div class = "service">
+            <div class = "hover-area">
+                <img class = "img_title" src="img/title_service.gif">
+                <div class ="mask">
+                    <div class = "hovered_1">
+                        <div class = "index">website</div>
+                        <div class = "description">
+                            ランディングページの製作<br>
+                            既存コードの改修
+                        </div>
+                        <div class = "index">application</div>
+                        <div class = "description">
+                            Windowsアプリケーションの開発<br>
+                            アプリケーションの.NETへの移行
+                        </div>
+                        <div class = "index">taking snapshot</div>
+                        <div class = "description">
+                            宣材写真・素材画像の撮影および提供<br>
+                        </div>
+                        <div class = "index">design</div>
+                        <div class = "description">
+                            ウェブサイトのカンプ制作<br>
+                            オブジェクト指向UIデザイン化案の提供<br>
+                            アイコン画像及びカリグラフィロゴ等の制作
+                        </div>
+                        <div class = "index">sound</div>
+                        <div class = "description">
+                            各種サウンドエフェクト・BGMの制作
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <p>
-                  Street Photo,<br>
-                  Album Artwork,<br>
-                  IBM-like Windows Application,<br>
-                  Illustration,<br>
-                  And So on..
-              </p>
+            </div>
         </div>
+        <!--WORKS-->
+        <div class = "works">
+            <div class = "hover-area">
+                <img class = "img_title" src="img/title_works.gif">
+                <div class = "mask">
+                    <div class = "hovered_2">
+                        <div class="slider">
+                            <div class="slider-inner">
+                                <div class="slider-item"><img src = "img/sl1.jpg"></div>
+                                <div class="slider-item"><img src = "img/sl2.jpg"></div>
+                                <div class="slider-item"><img src = "img/sl3.jpg"></div>
+                                <div class="slider-item"><img src = "img/sl4.jpg"></div>
+                                <div class="slider-item"><img src = "img/sl5.jpg"></div>
+                            </div>
+                        </div>
+                        <div class = "description">
+                            <br>
+                            01 - snapshot 01<br>
+                            02 - snapshot 02<br>
+                            03 - IBM-like application like 1960's<br>
+                            04 - illustration of a girl who is hidden by flowers<br>
+                            05 - album artwork of a solo musician project named "in chernobyl"
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class = "area">
-    <img class = "titleimg" src="img/prof.PNG">
-    <div class="mask">
-    <div class="caption_3">
-    <img class = "profimg" src = "img/me.jpeg">
-      <div class = "intro">
-        joooya<br><br>
-        1993 Born in Utsunomiya City<br>
-        Lived in Shizuoka - HongKong - Nagoya<br>
-        Graduated from Nagoya University of Foreign Studies<br>
-        Studied abroad to Queensland, Australia.<br>
-        My creativity is thanks to confronting diversity<br>
-        while my life with migration.
-      </div>
-      </div>
-      </div>
-    </div>
-
-    <div class = "area">
-        <img class = "titleimg" src="img/other_acts.PNG">
-        <div class = "mask">
-            <div class = "caption_4">
-                <div class ="social">
-                    twitter : <a class = "link" href="https://twitter.com/@joooyadayo">@joooyadayo</a>
-                    <br><br><br>
-                    blog : <a>Under Constructing...</a>
-                  </div>
+        <!--PROFILE-->
+        <div class = "profile">
+            <div class = "hover-area">
+                <img class = "img_title" src="img/title_profile.gif">
+                <div class = "mask">
+                    <div class = "hovered_3">
+                        <div class = "index">joooya</div>
+                        <div class = "description">
+                            1993 Born in Utsunomiya City<br>
+                            Lived in Shizuoka - HongKong - Nagoya<br>
+                            Graduated from Nagoya University of Foreign Studies.<br>
+                            Studied abroad to Queensland, Australia.<br>
+                            My creativity is thanks to confronting diversity<br>
+                            while my life with migration.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--OTHER ACTIVITIES-->
+        <div class = "other-activities">
+            <div class = "hover-area">
+                <img class = "img_title" src="img/title_others.gif">
+                <div class = "mask">
+                    <div class = "hovered_4">
+                        <div class = "description">twitter:<a class = "link" href="https://twitter.com/@joooyadayo">@joooyadayo</a></div>
+                        <br>
+                        <div class = "description">blog:<a>under construction...</a></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-</div>
-
-
 </body>
 </html>
