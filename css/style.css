@@ -134,6 +134,7 @@ body{
         font-family: 'EB Garamond','Shippori Mincho', serif;
         /*中央揃え*/
         text-align: center;
+        min-width:100%;
     }
     .top{
         /*親要素にする*/
@@ -257,6 +258,7 @@ body{
         font-family: 'EB Garamond','Shippori Mincho', serif;
         /*中央揃え*/
         text-align: center;
+        min-width:100%;
     }
     .top{
         /*親要素にする*/
