@@ -337,7 +337,7 @@ body{
         /*子要素にする*/
         position:absolute;
         /*画面幅の80％を占有して表示*/
-        width : 80vw;
+        width : 60vw;
         /*上下左右の中央揃え*/
         top: 0;
         left: 0;
@@ -368,7 +368,7 @@ body{
         color:rgb(128, 0, 0);
     }
     .slide{
-        width:80vw;
+        width:60vw;
     }
 
 }
