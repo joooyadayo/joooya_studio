@@ -2,112 +2,96 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<!--画面拡大不可-->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 <!--Reset CSS-->
 <link rel="stylesheet" href="css/reset.css">
 <!--Using CSS-->
 <link rel="stylesheet" href="css/style.css">
-<!--画面拡大不可-->
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 <!--Title-->
 <title>joooya studio.</title>
 </head>
 <body>
-    <div class = "scroll-snapper">
-        <!--TOP-->
-        <div class = "top">
+    <div class="container">
+        <div class="top">
             <img class = "img_logo" src="img/top_logo.png">
-            <small class ="rights">© 2022 joooya studio</small>
         </div>
-        <!--SERVICE-->
-        <div class = "service">
-            <div class = "hover-area">
+        <div class="box service">
+            <div class="left">
                 <img class = "img_title" src="img/title_service.gif">
-                <div class ="mask">
-                    <div class = "hovered_1">
-                        <div class = "index">website</div>
-                        <div class = "description">
-                            ランディングページの製作<br>
-                            既存コードの改修
-                        </div>
-                        <div class = "index">application</div>
-                        <div class = "description">
-                            Windowsアプリケーションの開発<br>
-                            アプリケーションの.NETへの移行
-                        </div>
-                        <div class = "index">taking snapshot</div>
-                        <div class = "description">
-                            宣材写真・素材画像の撮影および提供<br>
-                        </div>
-                        <div class = "index">design</div>
-                        <div class = "description">
-                            ウェブサイトのカンプ制作<br>
-                            オブジェクト指向UIデザイン化案の提供<br>
-                            アイコン画像及びカリグラフィロゴ等の制作
-                        </div>
-                        <div class = "index">sound</div>
-                        <div class = "description">
-                            各種サウンドエフェクト・BGMの制作
-                        </div>
-                    </div>
+            </div>
+            <div class="right">
+                <div class = "index">website</div>
+                <div class = "description">
+                    ランディングページの製作<br>
+                    既存コードの改修
+                </div>
+                <div class = "index">application</div>
+                <div class = "description">
+                    Windowsアプリケーションの開発<br>
+                    アプリケーションの.NETへの移行
+                </div>
+                <div class = "index">taking snapshot</div>
+                <div class = "description">
+                    宣材写真・素材画像の撮影および提供<br>
+                </div>
+                <div class = "index">design</div>
+                <div class = "description">
+                    ウェブサイトのカンプ制作<br>
+                    オブジェクト指向UIデザイン化案の提供<br>
+                    アイコン画像及びカリグラフィロゴ等の制作
+                </div>
+                <div class = "index">sound</div>
+                <div class = "description">
+                    各種サウンドエフェクト・BGMの制作
                 </div>
             </div>
         </div>
-        <!--WORKS-->
-        <div class = "works">
-            <div class = "hover-area">
+        <div class="box">
+            <div class="left">
                 <img class = "img_title" src="img/title_works.gif">
-                <div class = "mask">
-                    <div class = "hovered_2">
-                        <div class="slider">
-                            <div class="slider-inner">
-                                <div class="slider-item"><img src = "img/sl1.jpg"></div>
-                                <div class="slider-item"><img src = "img/sl2.jpg"></div>
-                                <div class="slider-item"><img src = "img/sl3.jpg"></div>
-                                <div class="slider-item"><img src = "img/sl4.jpg"></div>
-                                <div class="slider-item"><img src = "img/sl5.jpg"></div>
-                            </div>
-                        </div>
-                        <div class = "description">
-                            <br>
-                            01 - snapshot 01<br>
-                            02 - snapshot 02<br>
-                            03 - IBM-like application like 1960's<br>
-                            04 - illustration of a girl who is hidden by flowers<br>
-                            05 - album artwork of a solo musician project named "in chernobyl"
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <div class="right">
+                <img class="slide" id="slide_img" class="slider" />
+                <script>
+                    const img_src = ["img/sl1.jpg","img/sl2.jpg", "img/sl3.jpg", "img/sl4.jpg","img/sl5.jpg"];
+                    let num = -1;
+                    function slide_time() {
+                    if (num === 4) {
+                        num = 0;
+                    } else {
+                        num++;
+                    }
+                    document.getElementById("slide_img").src = img_src[num];
+                    }
+                    setInterval(slide_time, 2000);
+                </script>
             </div>
         </div>
-        <!--PROFILE-->
-        <div class = "profile">
-            <div class = "hover-area">
+        <div class="box prof">
+            <div class="left">
                 <img class = "img_title" src="img/title_profile.gif">
-                <div class = "mask">
-                    <div class = "hovered_3">
-                        <div class = "index">joooya</div>
-                        <div class = "description">
-                            1993 Born in Utsunomiya City<br>
-                            Lived in Shizuoka - HongKong - Nagoya<br>
-                            Graduated from Nagoya University of Foreign Studies.<br>
-                            Studied abroad to Queensland, Australia.<br>
-                            My creativity is thanks to confronting diversity<br>
-                            while my life with migration.
-                        </div>
-                    </div>
+            </div>
+            <div class="right">
+                <div class = "index">joooya</div>
+                <div class = "description">
+                    1993 Born in Utsunomiya City<br>
+                    Lived in Shizuoka - HongKong - Nagoya<br>
+                    Graduated from Nagoya University of Foreign Studies.<br>
+                    Studied abroad to Queensland, Australia.<br>
+                    My creativity is thanks to confronting diversity<br>
+                    while my life with migration.
                 </div>
             </div>
         </div>
-        <!--OTHER ACTIVITIES-->
-        <div class = "other-activities">
-            <div class = "hover-area">
+        <div class="box">
+            <div class="left">
                 <img class = "img_title" src="img/title_others.gif">
-                <div class = "mask">
-                    <div class = "hovered_4">
-                        <div class = "description">twitter:<a class = "link" href="https://twitter.com/@joooyadayo">@joooyadayo</a></div>
-                        <br>
-                        <div class = "description">blog:<a>under construction...</a></div>
-                    </div>
+            </div>
+            <div class="right">
+                <div class = "description social">
+                    twitter:<a class = "link TextTyping" href="https://twitter.com/@joooyadayo">@joooyadayo</a>
+                    <br>blog:<a>under construction...</a>
                 </div>
             </div>
         </div>
