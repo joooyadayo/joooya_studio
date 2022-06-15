@@ -11,6 +11,7 @@ body{
     /*中央揃え*/
     text-align: center;
     min-width:100%;
+    overflow:hidden;
 }
 .top{
     /*親要素にする*/
@@ -60,7 +61,6 @@ body{
     align-items: center;
     /*スクロールスナップする位置*/
     scroll-snap-align:center;
-    overflow:hidden;
 }
 .service{
     /*親要素にする*/
@@ -136,6 +136,7 @@ body{
         /*中央揃え*/
         text-align: center;
         min-width:100%;
+        overflow:hidden;
     }
     .top{
         /*親要素にする*/
@@ -187,7 +188,6 @@ body{
         scroll-snap-align:center;
         /*縦並びにする*/
         flex-direction:column;
-        overflow:hidden;
     }
     .service{
         /*親要素にする*/
@@ -261,6 +261,7 @@ body{
         /*中央揃え*/
         text-align: center;
         min-width:100%;
+        overflow:hidden;
     }
     .top{
         /*親要素にする*/
@@ -312,7 +313,6 @@ body{
         scroll-snap-align:center;
         /*縦並びにする*/
         flex-direction:column;
-        overflow:hidden;
     }
     .service{
         /*親要素にする*/
