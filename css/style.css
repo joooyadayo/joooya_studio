@@ -325,13 +325,13 @@ body{
         /*親要素にする*/
         position:relative;
         /*要素の幅を指定　左右均等がベター*/
-        width:500px;
+        width:300px;
     }
     .right{
         /*親要素にする*/
         position:relative;
         /*要素の幅を指定　左右均等がベター*/
-        width:500px;
+        width:300px;
     }
     .img_title{
         /*子要素にする*/
@@ -368,7 +368,7 @@ body{
         color:rgb(128, 0, 0);
     }
     .slide{
-        width:90vw;
+        width:80vw;
     }
 
 }
