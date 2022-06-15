@@ -258,7 +258,6 @@ body{
         font-family: 'EB Garamond','Shippori Mincho', serif;
         /*中央揃え*/
         text-align: center;
-        min-width:100%;
     }
     .top{
         /*親要素にする*/
@@ -337,7 +336,7 @@ body{
         /*子要素にする*/
         position:absolute;
         /*画面幅の80％を占有して表示*/
-        width : 60vw;
+        width : 80vw;
         /*上下左右の中央揃え*/
         top: 0;
         left: 0;
