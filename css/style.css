@@ -37,11 +37,12 @@ body{
 }
 .container {
     /*要素からはみ出た場合はブラウザに依存*/
-    overflow: hidden;
+    overflow: auto;
     /*スクロールスナップ方向：縦方向*/
     scroll-snap-type: y;
     /*画面高さの100%を占有して表示*/
     height: 100vh;
+    margin:0 auto;
 }
 .box{
     /*左右均等に並べる*/
@@ -162,11 +163,12 @@ body{
     }
     .container {
         /*要素からはみ出た場合はブラウザに依存*/
-        overflow: hidden;
+        overflow: auto;
         /*スクロールスナップ方向：縦方向*/
         scroll-snap-type: y;
         /*画面高さの100%を占有して表示*/
         height: 100vh;
+        margin:0 auto;
     }
     .box{
         /*左右均等に並べる*/
@@ -287,11 +289,12 @@ body{
     }
     .container {
         /*要素からはみ出た場合はブラウザに依存*/
-        overflow: hidden;
+        overflow: auto;
         /*スクロールスナップ方向：縦方向*/
         scroll-snap-type: y;
         /*画面高さの100%を占有して表示*/
         height: 100vh;
+        margin:0 auto;
     }
     .box{
         /*左右均等に並べる*/
