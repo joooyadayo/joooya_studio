@@ -324,13 +324,13 @@ body{
         /*親要素にする*/
         position:relative;
         /*要素の幅を指定　左右均等がベター*/
-        width:300px;
+        width:400px;
     }
     .right{
         /*親要素にする*/
         position:relative;
         /*要素の幅を指定　左右均等がベター*/
-        width:300px;
+        width:400px;
     }
     .img_title{
         /*子要素にする*/
