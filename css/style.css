@@ -325,7 +325,7 @@ body{
         position:relative;
         /*要素の幅を指定　左右均等がベター*/
         width:400px;
-        margin:0 auto;
+        text-align:center;
     }
     .right{
         /*親要素にする*/
